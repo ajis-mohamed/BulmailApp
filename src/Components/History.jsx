@@ -10,7 +10,7 @@ function History() {
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await axios.get("https://bulkmail-backend-gkpn.onrender.com/history");
+                const response = await axios.get("https://bulkmail-backend-theta.vercel.app/history");
                 setHistoryData(response.data)
             } catch (error) {
                 console.log("something Went Wrong : ", error)
