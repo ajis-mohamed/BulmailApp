@@ -7,7 +7,7 @@ function Sidebar() {
     const location = useLocation()
     const loc = location.pathname
     // Values could be: 'send', 'history'
-    const [activeTab, setActiveTab] = useState(loc === '/sendmail' ? 'send' : 'history');
+    const [activeTab, setActiveTab] = useState(loc === '/sendmail' && loc === '/' ? 'send' : 'history');
 
     const navigate = useNavigate()
 
