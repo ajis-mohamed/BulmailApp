@@ -19,7 +19,7 @@ export default function SendBulkEmail() {
         setSuccessMessage("");
         setErrorMessage("");
         try {
-            const response = await axios.post("https://bulkmail-backend-1-v31o.onrender.com/sendmail", { message: message, emailList: emailList });
+            const response = await axios.post("https://bulkmail-backend-gkpn.onrender.com/sendmail", { message: message, emailList: emailList });
             console.log(response.data);
             setSuccessMessage("Campaign sent successfully! 🎉");
         } catch (error) {
